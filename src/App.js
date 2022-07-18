@@ -15,7 +15,11 @@ export default function App() {
     const startTime = Date.now();
     dispatch(increment());
     const endTime = Date.now();
-    console.log("Delay in sync dispatch: ", (endTime - startTime) / 1000);
+    console.log(
+      "Delay in sync dispatch: ",
+      (endTime - startTime) / 1000,
+      " secs"
+    );
   };
 
   // This is asynchrounous dispatch
@@ -24,7 +28,11 @@ export default function App() {
     const startTime = Date.now();
     dispatch(asyncIncrement());
     const endTime = Date.now();
-    console.log("Delay in async dispatch: ", (endTime - startTime) / 1000);
+    console.log(
+      "Delay in async dispatch: ",
+      (endTime - startTime) / 1000,
+      "secs"
+    );
   };
 
   return (
