@@ -1,2 +1,2 @@
-# redux-counter-example
+# RecoilPersistenceExample
 Created with CodeSandbox
