@@ -1,3 +1,4 @@
+// function that adds delay
 function sleep(milliseconds) {
   const date = Date.now();
   let currentDate = null;
@@ -9,7 +10,8 @@ function sleep(milliseconds) {
 const counterReducer = (state = 1, action) => {
   switch (action.type) {
     case "INCREMENT":
-      sleep(1000);
+      // sleep for 2 secs
+      sleep(2000);
       return state + 1;
     default:
       return state;

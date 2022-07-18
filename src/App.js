@@ -1,6 +1,11 @@
 import "./styles.css";
 import { useSelector, useDispatch } from "react-redux";
 import { asyncIncrement, increment } from "./actions";
+
+// A basic counter app, to show time it takes for
+// sync dispatch and async dispatch (thunk action)
+// In the reducer a delay of 2 secs is added for the
+// increment action
 export default function App() {
   const counter = useSelector((state) => state.counter);
   const dispatch = useDispatch();
